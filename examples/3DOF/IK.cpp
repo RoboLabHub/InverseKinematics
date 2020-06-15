@@ -7,6 +7,8 @@ IK::IK(double link1, double link2, double link3) :
 
 }
 
+// The IK formula from pdf:
+// https://www.researchgate.net/publication/320307716_Inverse_Kinematic_Analysis_Of_A_Quadruped_Robot
 void IK::inverseKinematics(double x, double y, double z, double angles[3])
 {
     double x2 = x * x;
@@ -56,7 +58,7 @@ IK::Vector IK::rotate(IK::Vector pos, IK::Vector rot)
 
     double m31 = -sb;
     double m32 = cb * sy;
-    double m33 = cb * cy;
+    double m33 = c * cy;
 
     IK::Vector out;
     out.x = m11 * pos.x + m12 * pos.y + m13 * pos.z;
