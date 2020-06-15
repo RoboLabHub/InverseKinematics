@@ -4,14 +4,20 @@ The IK is a set of a mathematical formulas that allows to calculate the joint po
 
 NB! Depends of joints count and types (revolute or prismatic) the formula will be different. So, you can't just take the IK formula and attach it to another robot with different configuration (count of joints, length, types). You have to modify the IK formula and tune it.
 
-Here the example of IK formula for my 3DOF quadruped robot leg:
+Here the example of the IK formula for my 3DOF quadruped robot leg:</br>
+https://github.com/RoboLabHub/InverseKinematics/tree/master/examples/3DOF
 
-
-Here the example for 6DOF robot arm:
+Here the example for 6DOF robot arm:</br>
 https://github.com/thomashiemstra/robot_arm_with_vision/blob/master/src/IK.cpp
 
-To get understand how these formulas are created please check this set of videos:
+To get understand how these formulas are created please check this set of videos:</br>
 https://www.youtube.com/watch?v=rJx_XZ8xz6w
+https://www.youtube.com/watch?v=3RHg6OJLYhM
+https://www.youtube.com/watch?v=VjsuBT4Npvk
 
-Manipulator types:
+Manipulator types:</br>
 https://www.youtube.com/watch?v=lySKu7qtfCs
+
+The examples of videos where IK is used:
+https://youtu.be/N-FH-j3-j_k
+https://youtu.be/P7M-U_FudNk
